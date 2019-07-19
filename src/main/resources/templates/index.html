@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Spring</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Spring Boot</div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Country Id</th>
+                    <th>Country</th>
+                    <!--                                <th>Action</th>-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="country:${dataCountry}">
+                    <td th:text="${country.countryId}"></td>
+                    <td th:text="${country.country}"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
